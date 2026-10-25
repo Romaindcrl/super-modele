@@ -1,0 +1,35 @@
+{
+  "title": "v6-591M : pré-entraînement puis affinage Simpson (NorMuon), sur les TPU de Kaggle et de Colab",
+  "checkpoints": "v[0-9]*-*M*.json",
+  "steps": [
+    {
+      "id": "kaggle_tpu8b",
+      "label": "v6-591M · Kaggle v5e-8 · 7 → 12 G tokens",
+      "kind": "kaggle",
+      "kernel": "super-modele-tpu8b",
+      "hardware": "TPU",
+      "hours": 8.4,
+      "detail": "suite du pré-entraînement sur le TPU v5e-8 de Kaggle (8 puces, un processus par puce ; quota Kaggle, pas de crédits Colab) · reprise du modèle final (pas 13 358, 7,00 G tokens, super-modele-etat) · cible 12 G tokens, learning rate remonté par paliers (+0,005 par pas) puis nouvelle descente · arrêt propre après 8,4 h (session limitée à 9 h), état sauvegardé pour une session suivante si la cible n'est pas atteinte · puis affinage Simpson sans dropout, score sur le test et exemples dans la même session"
+    },
+    {
+      "id": "ft2_v6e",
+      "label": "v6-591M · affinage Simpson (sans dropout)",
+      "kind": "local",
+      "log": "data/colab/ft2.log",
+      "hardware": "Colab",
+      "colab": true,
+      "detail": "affinage Simpson NorMuon du modèle pré-entraîné final (pas 13 358, 7,00 G tokens), sans dropout (le premier affinage, avec dropout 0,1, avait divergé : seul son pas 20 était bon, v6-591M-ft1) · 100 M tokens, 190 pas, ~30 min sur v6e · puis score sur le test Simpson et exemples · rapatrié en v6-591M-ft2",
+      "finetune": true
+    },
+    {
+      "id": "v6e_w1536",
+      "label": "v6-591M · pré-entraînement Colab",
+      "kind": "local",
+      "log": "data/colab/run.log",
+      "hardware": "Colab",
+      "colab": true,
+      "detail": "591 M paramètres · 20 couches × 1536, 12 têtes de 128 · PyTorch/XLA + attention flash + q/k/v sans permutation (QKV_LAYOUT) · v6e (~95 000 tokens/s) ou v5e (~36 000, corpus de 4 Go gardé en mémoire), transfert vers un v6e dès qu'il y en a un · NorMuon · cible réajustée chaque heure au solde restant · affinage Simpson NorMuon · plafond : solde du départ − 5 unités",
+      "stage": "pretrain_gpt2_modded"
+    }
+  ]
+}

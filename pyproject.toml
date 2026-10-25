@@ -1,0 +1,35 @@
+[project]
+name = "super-modele"
+version = "0.1.0"
+description = "Un Transformer (GPT) entraîné from scratch, d'après le cours Creative Technology (ESILV)"
+readme = "README.md"
+authors = [
+    { name = "Romaindcrl", email = "theflute07@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "datasets>=5.1.0",
+    "ftfy>=6.3.1",
+    "gradio>=6.30.0",
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "plotly>=7.1.0",
+    "pyarrow>=26.0.0",
+    "safetensors>=0.8.0",
+    "tensorboard>=2.21.0",
+    "tokenizers>=0.23.3",
+    "torch>=2.14.1",
+]
+
+[project.scripts]
+super-modele = "super_modele:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "jupyterlab>=4.6.4",
+]

@@ -1,0 +1,20 @@
+{
+  "id": "romaindl/super-modele-gpumod",
+  "title": "super-modele-gpumod",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "romaindl/super-modele-donnees"
+  ],
+  "kernel_sources": [
+    "romaindl/super-modele-prep",
+    "romaindl/super-modele-dialogue"
+  ],
+  "competition_sources": [],
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "machine_shape": "NvidiaTeslaT4"
+}

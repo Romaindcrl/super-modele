@@ -1,0 +1,16 @@
+{
+  "id": "romaindl/super-modele-dialogue",
+  "title": "super-modele-dialogue",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "dataset_sources": [
+    "romaindl/super-modele-donnees"
+  ],
+  "kernel_sources": [],
+  "competition_sources": []
+}

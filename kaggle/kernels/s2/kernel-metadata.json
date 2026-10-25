@@ -1,0 +1,21 @@
+{
+  "id": "romaindl/super-modele-s2",
+  "title": "super-modele-s2",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "romaindl/super-modele-donnees"
+  ],
+  "competition_sources": [],
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "machine_shape": "TpuV5E8",
+  "kernel_sources": [
+    "romaindl/super-modele-prep",
+    "romaindl/super-modele-s1"
+  ],
+  "docker_image_pinning_type": "latest"
+}

@@ -1,0 +1,16 @@
+{
+  "id": "romaindl/super-modele-tputest",
+  "title": "super-modele-tputest",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "enable_internet": false,
+  "machine_shape": "TpuV5E8",
+  "docker_image_pinning_type": "latest",
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": []
+}

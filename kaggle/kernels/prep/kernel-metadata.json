@@ -1,0 +1,16 @@
+{
+  "id": "romaindl/super-modele-prep",
+  "title": "super-modele-prep",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "romaindl/super-modele-donnees"
+  ],
+  "competition_sources": [],
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "kernel_sources": []
+}

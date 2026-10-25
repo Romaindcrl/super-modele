@@ -1,0 +1,29 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Données, checkpoints et historiques d'entraînement (volumineux)
+data/
+checkpoints/
+runs/
+*.pt
+
+# Jupyter et macOS
+.ipynb_checkpoints/
+.DS_Store
+
+
+.env
+
+# Archives du rendu
+rendu/
+
+# Réglages locaux de Claude Code
+.claude/

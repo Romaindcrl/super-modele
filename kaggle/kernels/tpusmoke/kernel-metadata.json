@@ -1,0 +1,17 @@
+{
+  "id": "romaindl/super-modele-tpusmoke",
+  "title": "super-modele-tpusmoke",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_internet": true,
+  "dataset_sources": [
+    "romaindl/super-modele-donnees"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [],
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "machine_shape": "TpuV5E8"
+}

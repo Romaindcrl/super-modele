@@ -1,0 +1,19 @@
+{
+  "id": "romaindl/super-modele-notebook",
+  "title": "Super modele notebook",
+  "code_file": "super_modele.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "dataset_sources": [
+    "romaindl/super-modele-donnees"
+  ],
+  "kernel_sources": [
+    "romaindl/super-modele-prep",
+    "romaindl/super-modele-dialogue"
+  ],
+  "competition_sources": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "romaindl/super-modele-tpu8b",
+  "title": "super-modele-tpu8b",
+  "code_file": "notebook.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "machine_shape": "TpuV5E8",
+  "enable_internet": true,
+  "dataset_sources": [
+    "romaindl/super-modele-code",
+    "romaindl/super-modele-etat"
+  ],
+  "kernel_sources": [
+    "romaindl/super-modele-prep",
+    "romaindl/super-modele-dialogue"
+  ],
+  "competition_sources": []
+}
