@@ -24,7 +24,7 @@ def code(text: str) -> None:
 
 # ======================================================================================================
 md(r"""
-# Super modèle · un GPT français entraîné de zéro, qui parle comme les Simpson
+# HomerGPT · un GPT français entraîné de zéro, qui parle comme les Simpson
 
 Ce notebook entraîne **de zéro** un modèle de langage de la famille GPT, puis le fait parler comme les personnages des Simpson. Tout le code est ici, sans bibliothèque de modèles toute faite : tokenizer, Transformer, optimiseurs, boucle d'entraînement, évaluation, génération.
 

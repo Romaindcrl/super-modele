@@ -1,9 +1,9 @@
-# Super modèle
+# HomerGPT
 
 Un GPT français entraîné *from scratch*, qui écrit des répliques dans le style des Simpson. Projet ESILV, cours
 Creative Technology : on part du GPT du cours (scripts 05 à 08) et on le fait grandir.
 
-## Le modèle rendu : `v6-591M-ft2`
+## Le modèle rendu : HomerGPT (`v6-591M-ft2`)
 
 | | |
 |---|---|

@@ -716,7 +716,7 @@ def header(monitor: Monitor) -> str:
         since = f" depuis {datetime.fromisoformat(c['phase_since']):%H:%M}" if c.get("phase_since") else ""
         quota += f"<span class='sm-chip' style='color:#dc2626'>{text}{since}</span>"
     updated = f"mis à jour à {monitor.updated:%H:%M:%S}" if monitor.updated else "première lecture…"
-    return (f"<div class='sm-header'><div><div class='sm-title'>Super modèle · suivi</div>"
+    return (f"<div class='sm-header'><div><div class='sm-title'>HomerGPT · suivi</div>"
             f"<div class='sm-sub'>{monitor.title}</div></div><div class='sm-chips'>{quota}"
             f"<span class='sm-chip'><span class='sm-live'></span>{updated} · affiché à {datetime.now():%H:%M:%S}</span></div></div>")
 
@@ -805,7 +805,7 @@ def main() -> None:
         lines = [line for line in step.lines if visible(line)]
         return "\n".join(lines[-150:]) or "(pas encore de journal)"
 
-    with gr.Blocks(title="Super modèle · suivi", fill_width=True) as demo:
+    with gr.Blocks(title="HomerGPT · suivi", fill_width=True) as demo:
         top = gr.HTML()
         cards = gr.HTML()
         lab = gr.HTML()

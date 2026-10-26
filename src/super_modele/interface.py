@@ -163,8 +163,8 @@ def main() -> None:
         value = next((lab for lab in labels if lab.split("  ·")[0] == stem), labels[0])
         return gr.update(choices=labels, value=value), kaggle_status(), describe(options()[value])
 
-    with gr.Blocks(title="Super modèle") as demo:
-        gr.Markdown("## Super modèle")
+    with gr.Blocks(title="HomerGPT") as demo:
+        gr.Markdown("## HomerGPT")
         status = gr.Markdown(kaggle_status())
         with gr.Row():
             model_choice = gr.Dropdown(list(options()), value=label(first), scale=3,

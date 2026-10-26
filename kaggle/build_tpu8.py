@@ -28,7 +28,7 @@ def notebook(limit_h: float, target: float, resume_target: float) -> dict:
                       "outputs": [], "source": text.strip()})
 
     cells.append({"cell_type": "markdown", "id": "m0", "metadata": {},
-                  "source": "# Super modèle v6-591M · pré-entraînement sur le TPU v5e-8 de Kaggle"})
+                  "source": "# HomerGPT v6-591M · pré-entraînement sur le TPU v5e-8 de Kaggle"})
     code(f'''
 import glob, json, os, re, subprocess, threading, time
 T0 = time.time()
